@@ -4,10 +4,39 @@
 %Here's an example how to cite.~\cite{atc13}
 
 \section{N77 N78 and N79 band}
-The goal of this phd is to exploit the high piezoelectric coupling coefficient of AlScN to satisfy the requirements for the New Radio standards of 5G bands in terms of required fractional bandwidth. From the mBVD model that characterises a 
+The goal of this phd is to exploit the high piezoelectric coupling coefficient of AlScN to satisfy the requirements for the New Radio standards of 5G bands in terms of required fractional bandwidth. From the mBVD model that characterises the electrical equivalence of motional parameters, the fractional bandwidth of a resonator is defined as the difference between the resonance and the antiresonance frequencies. A filter built with a lattice or ladder configuration passband is twice as much as the fractional bandwith of te resonators used as building blocks. From the mBVD model the distance between resonance and antiresonance frequencies depends on the ratio between $C_m$ and $ C_0 $. Lookg at these values under the material point of view the $ C_0 $ capacitance represents the storage of energy as electric field on the resonator, while $ C_m $ is the electric equivalent of the energy coupled to the mechanical mode. But the ratio between mechanical coupled energy and overall energy is proportional to the $ k_t^2 $ coupling coefficient. This underlines the importance of high piezoelectric coupling materials for RF filters applications. 
+
+According to the 3GPP 5G New Radio standard, there is a set of bands where AlScN is appealing, given in table \ref{tab:bands}. The required $ k_t^2 $ for a band is related to the fractional bandwidth of each channel. As it can be seen the n77 n78 and n79 bands require a very large coupling factor to cover the whole fractional bandwidth. One solution relies in the usage of a standard AlN resonator coupled with a lumped inductor \cite{gao_aln_2020} or to use a high coupling piezoelectric material, such as in the case of high Scandium AlScN. 
+
+
+\begin{table}[]
+	\begin{tabular}{@{}ccccc@{}}
+		\toprule
+		\multicolumn{1}{l}{Band name} & \multicolumn{1}{l}{Duplex type} & \multicolumn{1}{l}{Center Frequency} & \multicolumn{1}{l}{Uplink ($K_t^2$)} & \multicolumn{1}{l}{Downlink ($K_t^2$)} \\ \midrule
+		n8 & FDD & 900 & 880 – 915 (9.44\%) & 925 – 960 (9.00\%) \\
+		n12 & FDD & 700 & 699 – 716 (5.86\%) & 729 – 746 (5.62\%) \\
+		n14 & FDD & 700 & 788 – 798 (3.1\%) & 758 – 768 (3.12\%) \\
+		n77 & TDD & 3700 & \multicolumn{2}{c}{3300 – 4200 (52.87\%)} \\
+		n78 & TDD & 3500 & \multicolumn{2}{c}{3300 – 3800 (32.46 \%)} \\
+		n79 & TDD & 4700 & \multicolumn{2}{c}{4400 – 5000 (29.61\%)} \\
+		n90 & TDD & 2500 & \multicolumn{2}{c}{2496 – 2690 (17.79\%)} \\ \bottomrule
+	\end{tabular}
+	\caption{Subset of 3GPP 5G NR bands. Frequencies given in MHz}
+	\label{tab:bands}
+\end{table}
+
 \subsection{Stepper-based fabrication of electrodes}
+As seen in section \ref{sec:resonators} one of the advantages of lateral mode resonators is that frequency is lithographically tunable, even if their coupling is weaker than thickness mode resonator. This tradeoff is useful in the frame of being able to integrate an array of filters in the same chip, especially given the offset needed to make a lattice type of filter. In literature \cite{schaffer_investigation_2020} \cite{schaffer_super_2020} the preferred method to resolve thin features with lithography is the emply of electron beam (e-beam) lithography. The advantage of E-beam is that being a maskless technology a rapid prototyping on wafer or chip can be done, but in the frame of making AlScN resonator an accessible technology a different approach is studied. To transfer the long lines used to make resonators an ASML PAS5500 DUV stepper is being optimized. Fabrication of devices with this technology requires two steps, first mask writing with standard  
+laser writing and then projection on the stepper with a 4x demagnification. This approach allows to bring the technology closer to a real-world environment, and allows for quick writing of repeated small patterns, as it can be thought to investigate the effect of phononic crystals on the resonance \cite{kuo_fractal_2011}. The advantage of a mask writing comes when multiple wafers are to be done with the same layout, which can be the case when it is necessary to optimize the deposition ad fabrication process. For this reason the advantage in having a solid lithography method is bigger at the beginning of the research track. Being able to write masks in-house in CMi cleanrooms is a further advantage to reduce the tapeout times and integrate vertically the process flow. 
+
 \section{AlScN on non-Si substrates}
-\lipsum[2]
+All the previous work done has been referred to the growth of AlN and AlScN on Si substrate and then release of the resonator. But in an era where thin film deposition of exotic material has become easier, it is interesting to evaluate if it is possibe to benefit from the perks of substrate materials where to grow AlScN.
+
+\subsection{AlScN on SiC}
+
+
+\section{Ultra-harsh environments}
+
 
 \begin{equation}\label{eqn:rate_eqns}
 \frac{\textrm{d}}{\textrm{d}t}\left[
