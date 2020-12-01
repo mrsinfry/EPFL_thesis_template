@@ -1,10 +1,6 @@
 \chapter{Future research}
-
-
-%Here's an example how to cite.~\cite{atc13}
-
 \section{N77 N78 and N79 band}
-The goal of this phd is to exploit the high piezoelectric coupling coefficient of AlScN to satisfy the requirements for the New Radio standards of 5G bands in terms of required fractional bandwidth. From the mBVD model that characterises the electrical equivalence of motional parameters, the fractional bandwidth of a resonator is defined as the difference between the resonance and the antiresonance frequencies. A filter built with a lattice or ladder configuration passband is twice as much as the fractional bandwith of te resonators used as building blocks. From the mBVD model the distance between resonance and antiresonance frequencies depends on the ratio between $C_m$ and $ C_0 $. Lookg at these values under the material point of view the $ C_0 $ capacitance represents the storage of energy as electric field on the resonator, while $ C_m $ is the electric equivalent of the energy coupled to the mechanical mode. But the ratio between mechanical coupled energy and overall energy is proportional to the $ k_t^2 $ coupling coefficient. This underlines the importance of high piezoelectric coupling materials for RF filters applications. 
+The goal of this PhD track is to exploit the high piezoelectric coupling coefficient of AlScN to satisfy the requirements for the New Radio standards of 5G bands in terms of required fractional bandwidth. From the mBVD model that characterises the electrical equivalence of motional parameters, the fractional bandwidth of a resonator is defined as the difference between the resonance and the antiresonance frequencies. A filter built with a lattice or ladder configuration passband is twice as much as the fractional bandwidth of the resonators used as building blocks. From the mBVD model the distance between resonance and antiresonance frequencies depends on the ratio between $C_m$ and $ C_0 $. Looking at these values under the material point of view the $ C_0 $ capacitance represents the storage of energy as electric field on the resonator, while $ C_m $ is the electric equivalent of the energy coupled to the mechanical mode. But the ratio between mechanical coupled energy and overall energy is proportional to the $ k_t^2 $ coupling coefficient. This underlines the importance of high piezoelectric coupling materials for RF filters applications. 
 
 According to the 3GPP 5G New Radio standard, there is a set of bands where AlScN is appealing, given in table \ref{tab:bands}. The required $ k_t^2 $ for a band is related to the fractional bandwidth of each channel. As it can be seen the n77 n78 and n79 bands require a very large coupling factor to cover the whole fractional bandwidth. One solution relies in the usage of a standard AlN resonator coupled with a lumped inductor \cite{gao_aln_2020} or to use a high coupling piezoelectric material, such as in the case of high Scandium AlScN. 
 
@@ -26,37 +22,27 @@ According to the 3GPP 5G New Radio standard, there is a set of bands where AlScN
 \end{table}
 
 \subsection{Stepper-based fabrication of electrodes}
-As seen in section \ref{sec:resonators} one of the advantages of lateral mode resonators is that frequency is lithographically tunable, even if their coupling is weaker than thickness mode resonator. This tradeoff is useful in the frame of being able to integrate an array of filters in the same chip, especially given the offset needed to make a lattice type of filter. In literature \cite{schaffer_investigation_2020} \cite{schaffer_super_2020} the preferred method to resolve thin features with lithography is the emply of electron beam (e-beam) lithography. The advantage of E-beam is that being a maskless technology a rapid prototyping on wafer or chip can be done, but in the frame of making AlScN resonator an accessible technology a different approach is studied. To transfer the long lines used to make resonators an ASML PAS5500 DUV stepper is being optimized. Fabrication of devices with this technology requires two steps, first mask writing with standard  
-laser writing and then projection on the stepper with a 4x demagnification. This approach allows to bring the technology closer to a real-world environment, and allows for quick writing of repeated small patterns, as it can be thought to investigate the effect of phononic crystals on the resonance \cite{kuo_fractal_2011}. The advantage of a mask writing comes when multiple wafers are to be done with the same layout, which can be the case when it is necessary to optimize the deposition ad fabrication process. For this reason the advantage in having a solid lithography method is bigger at the beginning of the research track. Being able to write masks in-house in CMi cleanrooms is a further advantage to reduce the tapeout times and integrate vertically the process flow. 
+As seen in section \ref{sec:resonators} one of the advantages of lateral mode resonators is that frequency is lithographically tunable, even if their coupling is weaker than thickness mode resonator. This trade-off is useful in the frame of being able to integrate an array of filters in the same chip, especially given the offset needed to make a lattice type of filter. In literature \cite{schaffer_investigation_2020} \cite{schaffer_super_2020} the preferred method to resolve thin features with lithography is the employ of electron beam (e-beam) lithography. The advantage of E-beam is that being a maskless technology a rapid prototyping on wafer or chip can be done, but in the frame of making AlScN resonator an accessible technology a different approach is studied. To transfer the long lines used to make resonators an ASML PAS5500 DUV stepper is being optimized. Fabrication of devices with this technology requires two steps, first mask writing with standard  
+laser writing and then projection on the stepper with a 4x demagnification. This approach allows to bring the technology closer to a real-world production environment, and allows for quick writing of repeated small patterns, as it can be thought to investigate the effect of phononic crystals on the resonance \cite{kuo_fractal_2011}. The advantage of a mask writing comes when multiple wafers are to be done with the same layout, which can be the case when it is necessary to optimize the deposition ad fabrication process. For this reason the advantage in having a solid lithography method is bigger at the beginning of the research track. Being able to write masks in-house in CMi cleanrooms is a further advantage to reduce the tapeout times and integrate vertically the process flow. 
 
 \section{AlScN on non-Si substrates}
-All the previous work done has been referred to the growth of AlN and AlScN on Si substrate and then release of the resonator. But in an era where thin film deposition of exotic material has become easier, it is interesting to evaluate if it is possibe to benefit from the perks of substrate materials where to grow AlScN.
+All the previous work done has been referred to the growth of AlN and AlScN on Si substrate and then release of the resonator. But in an era where thin film deposition of exotic material has become easier, it is interesting to evaluate if it is possible to benefit from the perks of substrate materials where to grow AlScN.
 
 \subsection{AlScN on SiC}
+\label{ssec:SiC}
+Silicon Carbide (SiC) is a promising material to be coupled with AlN for fabrication of resonators. SAW devices have been fabricated with AlN on a SiC on Si \cite{lin_surface_2013}. In the paper it is shown that SiC, due to his high phase velocity and resistance to high temperature (tested by annealing at 540°) appears to be an interesting candidate for Harsh-environments resonators. Bulk-acoustic wave resonators have been fabricated too with an AlN on SiC stack \cite{shealy_low_2017} at a frequency of 3.7GHz showing that this double film technology allows for high frequency and high power resonators. The alloying of Sc in the AlN/SiC stack would add the benefit of large electromechanical coupling to the advantages of this technology.  
 
+
+\subsection{AlScN on GaN}
+Gallium Nitride is gaining momentum as a suitable semiconductor for HF application, since it is possible to make 2D electron gas structures by using AlGaN/GaN layered structures. This increases the carrier mobility allowing for very large switching speed. There is literature about AlGaN made resonators \cite{shealy_single_2016} deposited with MOCVD with frequency of 2.3 GHz and $ k_t^2 $ of 4.44\% demonstrating as AlGaN is a suitable material for resonators. Rather than GaN made resonators, that would require to develop an expertise on a new material, the interest goes more in AlN on GaN resonators, as seen in \cite{qamar_coupled_2019} where a comparison between AlScN on GaN and AlScN on Si resonator is carried on. From the paper it results that $ k_t^2 $ on a GaN substrate is 3.2\% against 2.4 \% on a Si substrate, proving compatibility between AlN resonator fabrication on GaN and Si substrates.
 
 \section{Ultra-harsh environments}
+The moonshot of the last two sections is to answer a question: can be AlScN a suitable material to operate in harsh environments? AlN on SiC is shown from subsection \ref{ssec:SiC} to be working up to a temperature of 540° but there is a factor to consider. At a Sc concentration higher than 27\% AlScN is a Ferroelectric material \cite{fichtner_alscn_2019} which explains the very high piezoelectric coupling coefficient, as long as the temperature is below the Curie Temperature of the material. In \cite{fichtner_alscn_2019} a temperature dependent $ e_{31} $ measurement is ran, with a max temperature of 600°, above which the electrical connections failed. But form the paper the figure shows also that $ e_{31} $ starts to reduce, suggesting that the Curie temperature might be just above that. While the electrodes can be easily made with tungsten to withstand high temperatures \cite{verbrugghe_study_2017} the piezoelectric coefficient degradation is the critical point.
+\pagebreak
+\section{Research plan timeline}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width = \linewidth]{tail/timeline.png}
+	\caption{Tentantive Timeline for PhD track}
+\end{figure}
 
-
-\begin{equation}\label{eqn:rate_eqns}
-\frac{\textrm{d}}{\textrm{d}t}\left[
-\begin{array}{l}
-P_{\textit{0}} \\
-P_{\textit{1}} \\
-P_{\textit{T}}
-\end{array}
-\right] =
-\left[
-\begin{array}{l}
-\frac{P_{\textit{1}}}{\tau_{\textit{10}}} + \frac{P_{\textit{T}}}{\tau_{\textit{T}}} - \frac{P_{\textit{0}}}{\tau_{\textit{ex}}} \\
-- \frac{P_{\textit{1}}}{\tau_{\textit{10}}} - \frac{P_{\textit{1}}}{\tau_{isc}} + \frac{P_{\textit{0}}}{\tau_{\textit{ex}}} \\
-\frac{P_{\textit{1}}}{\tau_{isc}} -  \frac{P_{\textit{T}}}{\tau_{\textit{T}}}
-\end{array}
-\right]
-\end{equation}
-
-
-\begin{equation}\label{eqn:avgfluorescence}
-\bar{I_{f}}(\vec{r})
-	= \gamma(\vec{r}) \left(1 - \frac{\tau_{\textit{T}} P_{\textit{T}}^{{eq}}\left(1-\exp \left(-\frac{(T_p - t_p)}{\tau_{\textit{T}}}\right)\right)}{1-\exp\left(-\frac{(T_p - t_p)}{\tau_{\textit{T}}} + k_{\textit{2}} t_p\right)} \times \frac{\left(\exp\left(k_{\textit{2}} t_p\right)-1\right)}{t_p} \right)
-\end{equation}
